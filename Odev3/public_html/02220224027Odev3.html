@@ -1,0 +1,153 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: url('Odev3/ArtStation - Explore.jpg');
+            background-size: cover;
+            padding-left: 30%;
+        }  
+        form{
+            color: rgb(231,230,200) ;
+            width: 30%;
+            text-align: center;
+            border: 8px double rgb(81,84,53);
+            border-radius: 30px;
+            background-color: rgba(55,51,31,0.5);
+        }
+        input, textarea{
+            background-color: rgb(55,51,31);
+            color: #f2f0dd;
+            width: 90%;
+        }
+        header{
+            width: 32%;
+            text-align: center;
+            color: #ffffcc;
+        }
+        footer{
+            color: black;
+            width: 30%;
+            height: 10%;
+            text-align: center;
+            border-top: 3px solid rgb(81,84,53);
+            border-radius: 30px;
+            background-color: rgba(55,51,31,0.5);
+        }
+    </style>
+</head>
+<body>
+    <header><h1>  ÖDEV FORMU</h1></header>
+    <form autocomplete="on">
+        <label for="isim">Adınız:</label><br>
+        <input type="text" id="isim" name="form" pattern="[A-Za-z ]{1,50}" title="Lütfen yalnızca büyük-küçük harfler kullanın" autofocus required><br>
+        <label for="soyisim">Soyadınız:</label><br>
+        <input type="text" id="soyisim" name="form" pattern="[A-Za-z ]{1,50}" title="Lütfen yalnızca büyük-küçük harfler kullanın" required><br>
+        <label for="nick">Kullanıcı Adınız:</label><br>
+        <input type="text" id="nick" name="form" required><br>
+        <label for="telno">Telefon Numarası:</label><br>
+        <input type="tel" id="telno" name="form" placeholder="xxx xxx xxxx" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="xxx xxx xxxx şeklinde giriniz" required><br>
+        <label for="email">Email Adresi:</label><br>
+        <input type="email" id="email" name="form" required><br>
+        <label for="adres">Adres:</label><br>
+        <textarea id="adres" name="form" style="width:90%; height:15%;" required></textarea><br>
+        <label for="il">İl:</label><br>
+        <input type="text" name="form" list="iller" required><br>
+            <datalist id="iller">
+                <option value="Adana">
+                <option value="Adıyaman">
+                <option value="Adıyaman">
+                <option value="Ağrı">
+                <option value="Aksaray">
+                <option value="Amasya">
+                <option value="Ankara">
+                <option value="Antalya">
+                <option value="Ardahan">
+                <option value="Artvin">
+                <option value="Aydın">
+                <option value="Balıkesir">
+                <option value="Bartın">
+                <option value="Batman">
+                <option value="Bayburt">
+                <option value="Bilecik">
+                <option value="Bingöl">
+                <option value="Bitlis">
+                <option value="Bolu">
+                <option value="Burdur">
+                <option value="Bursa">
+                <option value="Çanakkale">
+                <option value="Çankırı">
+                <option value="Çorum">
+                <option value="Denizli">
+                <option value="Diyarbakır">
+                <option value="Düzce">
+                <option value="Edirne">
+                <option value="Elazığ">
+                <option value="Erzincan">
+                <option value="Erzurum">
+                <option value="Eskişehir">
+                <option value="Gaziantep">
+                <option value="Giresun">
+                <option value="Gümüşhane">
+                <option value="Hakkari">
+                <option value="Hatay">
+                <option value="Iğdır">
+                <option value="Isparta">
+                <option value="İstanbul">
+                <option value="İzmir">
+                <option value="Kahramanmaraş">
+                <option value="Karabük">
+                <option value="Karaman">
+                <option value="Kars">
+                <option value="Kastamonu">
+                <option value="Kayseri">
+                <option value="Kilis">
+                <option value="Kırıkkale">
+                <option value="Kırklareli">
+                <option value="Kırşehir">
+                <option value="Kocaeli">
+                <option value="Konya">
+                <option value="Kütahya">
+                <option value="Malatya">
+                <option value="Manisa">
+                <option value="Mardin">
+                <option value="Mersin">
+                <option value="Muğla">
+                <option value="Muş">
+                <option value="Nevşehir">
+                <option value="Niğde">
+                <option value="Ordu">
+                <option value="Osmaniye">
+                <option value="Rize">
+                <option value="Sakarya">
+                <option value="Samsun">
+                <option value="Şanlıurfa">
+                <option value="Siirt">
+                <option value="Sinop">
+                <option value="Şırnak">
+                <option value="Sivas">
+                <option value="Tekirdağ">
+                <option value="Tokat">
+                <option value="Trabzon">
+                <option value="Tunceli">
+                <option value="Uşak">
+                <option value="Van">
+                <option value="Yalova">
+                <option value="Yozgat">
+                <option value="Zonguldak">
+            </datalist>
+        <label for="cinsiyet1">Cinsiyet:</label><br>
+        <input type="radio" id="cinsiyet1" name="form" value="Kadın" style="width:20%;">
+        <label for="cinsiyet1">Kadın</label>
+        <input type="radio" id="cinsiyet2" name="form" value="Erkek" style="width:20%;">
+        <label for="cinsiyet2">Erkek</label><br>
+        <label for="dogumtarihi">Doğum Tarihi:</label><br>
+        <input type="date" id="dogumtarihi" name="form" required><br><br>
+        <input type="submit" value="Gönder" style="width:45%; height:30px; border-radius:10px; background-color: rgb(81,84,53);"><br>
+    </form>
+    <footer>
+        <p>Meryem Ece AYYILDIZ<br>02220224027</p>
+    </footer>
+</body>
+</html>

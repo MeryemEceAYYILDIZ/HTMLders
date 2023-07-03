@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300&family=Iceland&family=Raleway+Dots&family=Silkscreen&family=Wallpoet&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background-color: black;
+            }
+            .header{
+            position: relative;
+            padding: 5px;
+            text-align: center;
+            color: #a3988c;
+            }
+            .anabaslik{
+                font-family: "Wallpoet", sans-serif;
+                position: relative;
+                font-size: 40px;
+                letter-spacing: 10px;
+                text-shadow: 10px 10px 7px black;
+                background: linear-gradient(to right, #af0000, #af0000, #337a05, #fbe815, #bababa, #bababa);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                word-wrap: break-word;
+            }
+            p{
+                color: #ded3aa;
+                text-align: center;
+                font-family: 'Raleway Dots', cursive;
+            }
+            div.relative{
+                position: relative;
+                width: 100%;
+            } 
+            button{
+                position: absolute;
+                min-width: 6%;
+                height: 10%;
+                right: 20%;
+                border: 4px inset black;
+                border-radius: 50px;
+                box-shadow: 0px 0px 15px #ffffdc;
+                outline: 1px solid black;
+                outline-offset: 5px;
+                font-family: 'Silkscreen', cursive;
+                text-align: center;
+                font-size: 15px;
+                word-wrap: break-word;
+                overflow: auto;
+            }
+            button:focus{
+                border: 4px inset #0569d0;
+            }
+            .kirmiziIsik{
+                top: 20%;
+                background-color: #af0000; 
+            }
+            .kirmiziIsik:hover{
+                border-color: #af0000;  
+            }
+            .kirmiziIsik:focus{
+                box-shadow: 0px 0px 20px #af0000;
+            }
+            .sariIsik{
+                top: 35%;
+                background-color: #fbe815;
+            }
+            .sariIsik:hover{
+                border-color: #fbe815;  
+            }
+            .sariIsik:focus{
+                box-shadow: 0px 0px 20px #fbe815;
+            }
+            .yesilIsik{
+                top: 50%;
+                background-color: #337a05;
+            }
+            .yesilIsik:hover{
+                border-color: #337a05;
+            }
+            .yesilIsik:focus{
+                box-shadow: 0px 0px 20px #337a05;
+            }
+            .kapali{
+                top: 65%;
+                background-color: #bababa; 
+            }
+            .kapali:hover{
+                border-color: #bababa; 
+            }
+         </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="anabaslik">-TRAFIK LAMBASI SIMÜLASYONU-</h1>
+        </div>
+        <div class="relative">
+            <img id="myImage" src="resimler/main.png" alt="trafik lambası" style="width:100%">
+            <div>
+                <button class="kirmiziIsik" onclick="document.getElementById('myImage').src = 'resimler/redlight.png'">KIRMIZI</button>
+                <button class="sariIsik" onclick="document.getElementById('myImage').src = 'resimler/yellowlight.png'"><span style="color:#fbe815">-</span>SARI<span style="color:#fbe815">-</span></button>
+                <button class="yesilIsik" onclick="document.getElementById('myImage').src = 'resimler/greenlight.png'"><span style="color:#337a05">.</span>YESIL<span style="color:#337a05">.</span></button>
+                <button class="kapali" onclick="document.getElementById('myImage').src = 'resimler/main.png'">KAPAT<span style="color:#bababa">.</span></button>
+            </div>
+        </div>
+        <div>
+            <p>Meryem Ece AYYILDIZ</p>
+            <p>02220224027</p>
+            <p>Bu ödevde kullanılan görseller Blender ile özel olarak tasarlanmıştır.</p>
+        </div>
+    </body>
+</html>
